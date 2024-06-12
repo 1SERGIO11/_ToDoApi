@@ -1,0 +1,165 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+
+/* Modal styles */
+.modal {
+    backdrop-filter: blur(5px);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: rgb(52, 56, 61);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 420px;
+    height: 250px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Sign in form styles */
+* {
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+body {
+    background: rgb(52, 56, 61);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#wrapper {
+    position: absolute;
+    width: 420px;
+    height: 250px;
+    left: 50%;
+    margin-left: -160px;
+    top: 50%;
+    margin-top: -75px;
+}
+
+/* === Sign in Form === */
+#signin {
+    height: 90px !important;
+    width: 300px !important;
+    border-radius: 8px !important;
+    position: relative !important;
+    display: block !important;
+    padding: 0rem !important;
+    margin-left: 35px;
+}
+
+    #signin::before {
+        display: block !important;
+        position: relative !important;
+        height: 2px !important;
+        background: rgb(52, 56, 61) !important;
+        content: '' !important;
+        top: 44px !important;
+        margin-left: 20px !important;
+        z-index: 1 !important;
+    }
+
+    #signin input:first-of-type {
+        border-top-right-radius: 8px !important;
+        border-top-left-radius: 8px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    #signin input:last-of-type {
+        border-bottom-right-radius: 8px !important;
+        border-bottom-left-radius: 8px !important;
+        border-top-left-radius: 0px !important;
+    }
+
+    #signin input[type="text"], #signin input[type="password"], #signin button[type="submit"] {
+        background: rgb(28, 30, 33) !important;
+        box-shadow: inset -100px -100px 0 rgb(28, 30, 33) !important; /*Prevent yellow autofill color*/
+        color: rgb(52, 56, 61) !important;
+    }
+
+    #signin input[type="text"], #signin input[type="password"] {
+        position: relative !important;
+        display: block !important;
+        width: 280px !important;
+        height: 45px !important;
+        border: 0 !important;
+        outline: 0 !important;
+        top: -2px !important;
+        padding: 0 0 0 20px !important;
+        font-weight: 700 !important;
+    }
+
+        #signin input[type="text"]:focus, #signin input[type="password"]:focus {
+            color: rgb(255, 255, 255) !important;
+        }
+
+    #signin button[type="submit"] {
+        display: block !important;
+        position: absolute !important;
+        width: 52px !important;
+        color: rgb(52, 56, 61) !important;
+        border-radius: 50px !important;
+        outline: 0 !important;
+        z-index: 2 !important;
+        top: 17px !important;
+        right: -24px !important;
+        border: 6px solid rgb(52, 56, 61) !important;
+        font-size: 25px !important;
+        text-indent: 0px !important;
+        padding-left: 9px !important;
+        text-align: center !important;
+        min-width: 65px !important;
+    }
+
+        #signin button[type="submit"]:hover {
+            color: rgb(0, 126, 165) !important;
+            text-shadow: 0 0 10px rgb(0, 126, 165) !important;
+            cursor: pointer !important;
+        }
+
+    #signin p {
+        color: rgb(79, 85, 97) !important;
+        padding: 0 20px !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+        margin: 5px 0 0 0 !important;
+    }
+
+        #signin p > a {
+            color: rgb(111, 119, 135) !important;
+            text-decoration: none !important;
+        }
+
+            #signin p > a:hover {
+                border-bottom: 1px solid !important;
+            }
